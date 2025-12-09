@@ -7,7 +7,7 @@ function preparList(list, query) {
   if (query) {
     const newQuery = query.trim().toLowerCase();
 
-    list.filter(
+    return list.filter(
       movie =>
         movie.title.toLowerCase().includes(newQuery) ||
         movie.description.toLowerCase().includes(newQuery),
